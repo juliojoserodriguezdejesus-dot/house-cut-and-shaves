@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "House Cuts & Shaves",
+    "slug": "house-cuts-shaves",
+    "version": "0.1.0",
+    "scheme": "housecuts",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0D0F",
+    "icon": "./assets/icon.png",
+    "ios": {
+      "bundleIdentifier": "com.housecuts.agenda",
+      "supportsTablet": false,
+      "infoPlist": {
+        "CADisableMinimumFrameDurationOnPhone": true
+      }
+    },
+    "android": {
+      "package": "com.housecuts.agenda",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1C3534"
+      }
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "asyncRoutes": {
+            "web": false,
+            "default": "development"
+          }
+        }
+      ],
+      "expo-audio",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0A0D0F",
+          "image": "./assets/splash-logo.png",
+          "imageWidth": 200
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-notifications",
+        {
+          "color": "#EBAC56"
+        }
+      ]
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "backgroundColor": "#0A0D0F"
+    }
+  }
+}

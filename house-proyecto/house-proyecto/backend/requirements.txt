@@ -1,0 +1,8 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0
+pyjwt>=2.8
+argon2-cffi>=23.1
+httpx>=0.27
+psycopg[binary]>=3.2   # solo si usas PostgreSQL
+pytest>=8
